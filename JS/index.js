@@ -56,3 +56,4 @@ smallDevicesMenu.children.map((ele) => {
     smallDevicesMenu.classList.remove("open");
   });
 });
+
