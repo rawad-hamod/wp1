@@ -1,0 +1,471 @@
+:root {
+    --main--color: #ff9800
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* container */
+section {
+
+    padding: 15px 15px;
+    margin: auto;
+}
+
+/* start setting box */
+.settings-box {
+    position: fixed;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    width: 200px;
+    min-height: 100vh;
+    top: 0;
+    left: -200px;
+    transition: 0.3s;
+}
+
+.open {
+    left: 0;
+}
+
+.settings-box .toggle {
+    position: absolute;
+    top: 100px;
+    right: -30px;
+    background: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.settings-box .toogle i {
+    width: 30px;
+    padding: 8px 0px;
+
+}
+
+.settings-box .settings-container {
+    align-content: center;
+    padding: 10px;
+    background-color: #eee;
+    margin: 10px;
+}
+
+.settings-box .bcknd-cont {
+    align-content: center;
+    padding: 10px;
+    background-color: #eee;
+    margin: 10px;
+}
+
+.settings-box .bcknd-cont .bcknd-opt {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.settings-box .bcknd-cont .bcknd-opt span {
+    background-color: #009688;
+    border-radius: 5px;
+    width: 33px;
+    padding: 5px;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.settings-box .bcknd-cont .bcknd-opt span.active {
+    opacity: 1
+}
+
+.settings-box h4 {
+    margin: 0;
+    font-size: smaller;
+    text-align: center;
+}
+
+.settings-box .settings-container ul {
+
+    list-style: none;
+    padding: 5px 5px;
+    align-content: center;
+}
+
+.settings-box .settings-container ul li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(199, 60, 60);
+    display: inline-block;
+    margin: 2px;
+
+    cursor: pointer;
+    border: 2px transparent solid;
+}
+
+.settings-box .settings-container ul li.active {
+
+    border: 2px white solid;
+}
+
+.settings-box .settings-container ul li:first-child {
+    background-color: #ff9800;
+}
+
+.settings-box .settings-container ul li:nth-child(2) {
+    background-color: #e91e63;
+}
+
+.settings-box .settings-container ul li:nth-child(3) {
+    background-color: #009688;
+}
+
+.settings-box .settings-container ul li:nth-child(4) {
+    background-color: #03a9f4;
+}
+
+.settings-box .settings-container ul li:nth-child(5) {
+    background-color: #3caf50;
+}
+
+/* end setting box */
+/* start landing page */
+.first_section {
+    min-height: 100vh;
+    background-image: url('../images/01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+.first_section .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.808);
+    z-index: 1;
+}
+
+.header_area {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_area .logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 25px;
+
+}
+
+.header_area ul {
+    list-style: none;
+}
+
+.header_area ul li {
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.header_area ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.header_area ul li a:hover,
+.header_area ul li a.active {
+    scale: 1.02;
+    color: var(--main--color)
+}
+
+.introdection_text {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+
+.introdection_text h1 {
+    font-size: 34px;
+    margin-bottom: 5px;
+
+}
+
+.introdection_text p {
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.introdection_text h1 span {
+    color: var(--main--color);
+}
+
+/* end landing page */
+/* start about us */
+.second_section .about-us {
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.second_section .about-us .info-box {
+    flex: 1;
+    align-items: center;
+    padding: 30px;
+}
+
+.second_section .about-us .info-box h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main--color);
+    margin-bottom: 10px;
+}
+
+.second_section .about-us .info-box p {
+    line-height: 1.8;
+    color: #393131;
+
+}
+
+.second_section .about-us .img-box {
+    flex: 1;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+}
+
+.second_section .about-us .img-box img {
+    width: 250px;
+
+}
+
+/* end about us */
+/* start our skills */
+.third_section {
+    background-color: #eee;
+}
+
+.skills {
+    padding: 10px 20px;
+}
+
+.skills h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main--color);
+    margin-bottom: 10px;
+}
+
+.skills .skill-box {
+    background-color: #fff;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.skills .skill-box .skill-name {
+    height: 30px;
+    font-weight: bold;
+    width: 100px;
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.skills .skill-box .skill-progress {
+    height: 30px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.skills .skill-box .skill-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main--color);
+    width: 0;
+    height: 100%;
+    float: hi;
+    transition: all 1s;
+}
+
+/* end our skills */
+/* start our gallery */
+.fourth_section h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main--color);
+    margin-bottom: 10px;
+}
+
+.fourth_section .box-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.fourth_section .box-images img {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    border: 1px #eee solid;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.fourth_section .box-images img:hover {
+    opacity: 0.8;
+    scale: 1.01;
+}
+
+.popupoverlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0.9;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgPopup {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(218, 214, 214);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    border-radius: 5px;
+    z-index: 2000;
+    opacity: 1;
+
+}
+
+.imgPopup h2 {
+    color: var(--main--color);
+    font-size: 18px;
+    position: absolute;
+    top: -7px;
+    left: 5px;
+    overflow: hidden;
+}
+
+.imgPopup img {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transform: translate(0px, 11px);
+}
+
+.imgPopup .x-button {
+    color: white;
+    background-color: var(--main--color);
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    top: -7px;
+    left: calc(100% - 10px);
+    cursor: pointer;
+   align-items: center;
+   justify-content: center;
+}
+.imgPopup .x-button:hover{
+    scale: 1.03;
+    
+}
+
+/* end ourgallery */
+/* start time line */
+.timeline{
+    padding: 50px 0;
+    background-color: #eee;
+}
+.timeline .timeline-content{
+    position:relative;
+    overflow: hidden;
+}
+.timeline .timeline-content:before{
+    content:'';
+    width:3px;
+    height:100%;
+    background-color: var(--main--color);
+    position: absolute;
+    left:50%;
+    margin-left: -1px;
+    top:0 px;
+}
+.timeline .timeline-content .year{
+    margin:20px auto;
+    width: 50px;
+    background-color: var(--main--color);
+    color:white;
+    border-radius: 3px;
+    text-align: center;
+    padding:3px;
+    font-weight: bold;
+}
+.timeline .timeline-content .left,
+.timeline .timeline-content .right{
+    width: calc(50% - 25px);
+    margin-bottom: 40px;
+    position:relative;
+    padding:0 20px;
+    background-color: white;
+}
+.timeline .timeline-content .left{
+    float:left;
+}
+.timeline .timeline-content .right{
+    float:right;
+}
+.timeline .timeline-content .content h2{
+color:var(--main--color);
+font-weight: bold;
+
+}
+.timeline .timeline-content .content p{
+    color:#666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* end our time line */
