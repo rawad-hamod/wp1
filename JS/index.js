@@ -28,7 +28,7 @@ window.onscroll = function () {
 
 // hide and display small devices menu
 var smallDevicesMenu = document.getElementsByClassName("small-devices-menu")[0];
-console.log(smallDevicesMenu.children);
+
 var menuIcon = document.getElementsByClassName("menu-icon")[0];
 
 menuIcon.addEventListener("click", (e) => {
@@ -40,39 +40,3 @@ menuIcon.addEventListener("click", (e) => {
   }
 });
 
-
-
-
-// validation
-let form = document.getElementById("form");
-let userName = document.getElementById("name");
-let number = document.getElementById("phone number");
-let email = document.getElementById("email");
-let question = document.getElementById("question");
-let career = document.getElementById("career");
-let nameError = document.getElementById("name-error");
-let numberError = document.getElementById("num-error");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  if (number.value <= 899999999) {
-    numberError.innerText =
-      "the phone number must start with 9 and containts of 10 digits";
-  } else if (userName.value.length < 5) {
-    nameError.innerText =
-      'type your first and last name and space between: exp "Rawad Hamod"';
-  } else if (number.value >= 900000000 && userName.value.length >= 5) {
-   
-  window.alert(" submitted successfully");
-  userName.value = "";
-  number.value = "";
-  email.value = "";
-  career.value = "";
-  question.value = "";
-  file.value= "";
-  numberError.innerText = "";
-  nameError.innerText = "";
-  }
-  
-});
