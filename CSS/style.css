@@ -166,12 +166,8 @@ body {
     text-wrap: wrap;
     width:50%;
     text-align: left;
-    
     letter-spacing: 1px;
- 
-
 }
-
 .main-button {
     color: rgb(28, 28, 201);
     background-color:white;
@@ -186,11 +182,10 @@ body {
     text-decoration: none;
     outline: none;
 
-
 }
 
 .main-button:hover {
-    scale: 1.1
+    scale: 1.05
 }
 
 .services{
