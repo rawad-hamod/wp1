@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin:0;
+    
+}
+
+/* header in general contais a logo and nav for three sections */
+.header {
+    background-color: #fff;
+        width: 90%;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        border-radius: 10px;
+        margin:20px 5% 20px 5%;
+        border: 1px grey solid;
+        top: 0px;
+    }
+
+.small-devices-menu {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    min-width:30%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+   position: fixed;
+    right: 5%;
+    top: 70px;
+    padding: 20px;
+    visibility:hidden;
+    border:1px solid rgb(209, 199, 199);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    
+}
+.open{
+    visibility: visible;
+}
+
+.small-devices-menu a {
+    
+    text-decoration: none;
+    font-size:16px;
+    font-weight: 500; 
+    padding:5px;
+    margin-bottom: 15px;
+    color:#000;
+    transition: 0.2s;
+    padding: 5px;
+    width: 80%;
+    text-wrap: nowrap;
+}
+.small-devices-menu a:hover{
+    cursor: pointer;
+    background-color:blue;
+    border-radius: 5px;
+    color:white;
+
+}
+
+
+
+
+.logo {
+    text-decoration: none;
+    color: blue;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.4 rem;
+    word-spacing: 5px;
+
+
+}
+
+.social-icons a {
+    display: block;
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.navigation a {
+    color: blue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: blueviolet;
+    text-decoration: solid black 1px;
+}
+.active{
+    color: blueviolet;
+    text-decoration: solid black 1px !important;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+   
+    font-size: 18px;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+
+
+}
+
+.main h3 {
+    color: aqua;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.main-button {
+    color: white;
+    background-color: rgb(28, 28, 201);
+    border: 1px white solid;
+    border-radius: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 1em;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    text-decoration: none;
+
+
+}
+
+.main-button:hover {
+    scale: 1.1
+}
+
+.services {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.section-title {
+    color: blue;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* .card {
+    background: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    scale: 1.1;
+} */
+
+.icon {
+    color: blue;
+    font-size: 8em;
+    text-align: center;
+
+}
+
+.card-info {
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+   margin-top: 80px;
+}
+
+.projects-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+
+
+}
+
+.project-card {
+    background-color: #fff;
+    
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* margin: 20px; */
+    transition: 0.5s ease;
+    border: 1px grey solid; 
+    padding:10px;
+    margin: 15px;
+
+}
+
+.project-card:hover {
+    scale: 1.02;
+
+}
+
+.project-card:hover .card-img {
+    opacity: 0.9;
+
+}
+
+.card-img {
+    overflow: hidden;
+    height: fit-content;
+}
+
+.card-img img {
+    width: 366px;
+    height: 173px;
+
+
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.project-title-visit {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    margin-top: 0;
+
+
+
+}
+
+.project-title-visit strong {
+    font-weight: 500;
+    font-size: 1em;
+    color: #000;
+}
+
+.project-title-visit a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1em;
+    width:50px;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* contact */
+.contact{
+    margin-top: 60px;
+    height:fit-content;
+    position:relative
+}
+.contact form input,button,label,textarea,.form-row{
+    display: block;
+    width:100%;
+    margin-top: 10px;
+}
+
+.description{
+    width:60%;
+    height: 400px;
+    text-align: left;
+    line-height: 30px;
+}
+#popup{
+   width:50vw;
+   height:50vh;
+   background-color: aqua;
+   
+   z-index: 1000;
+   position: absolute;
+   visibility: hidden;
+
+   
+}
+
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    bottom: 0;
+    margin-top: 30px;
+    border-top: 1px solid gray;
+}
+
+footer p {
+    font-size: 1.1em;
+
+}
+
+footer p span {
+    font-size: larger;
+    font-weight: 700;
+
+}
+
+.sm {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+/* responsive */
+/* hide nav menu on small devices */
+@media screen and (max-width:768px) {
+    .navigation {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}

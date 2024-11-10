@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    height: 100vh;
+    display: flex;
+}
+.menu{
+    background-color: #123;
+    width:60px;
+    
+    padding: 20px;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.7s;
+
+    
+    
+}
+.menu:hover{width: 260px;}
+ul{
+    list-style: none;
+    height: 95vh;
+    position: relative;
+}
+ul li a{
+    display:block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0px;
+    display: flex;
+   align-items: center;
+    border-radius: 8px;
+    gap: 40px;
+    transition: 0.5s;
+
+
+}
+ul li a:hover, .active ,.box:hover{
+    background-color: #ffffff40;
+
+}
+.logout{
+    position: absolute;
+    bottom:0px;
+   
+    width: 100%;
+}
+.logout a{
+    background-color: red;
+
+}
+ul li a i{
+    font-size: 30px;
+}
+.imgbox{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.imgbox img{
+    width:100%;
+   
+}
+.profile{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.profile h2{
+    font-size:20px ;
+    text-transform: capitalize;
+}
+.icon{
+    cursor: pointer;
+}
+.content{
+    background: #123;
+    width: 100%;
+    margin: 10px;
+    height: 100vh;
+}
+.title-info{
+    background: rgb(22, 131, 131);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin:10px 0;
+}
+.title-info p{
+    text-transform: capitalize;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    background: #fff5;
+    flex-basis:150px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+    align-items: center;
+    flex-grow: 1;
+}
+.box i{
+    font-size:40px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    border-spacing: 5px;
+
+}
+table thead th{background: rgb(22, 131, 131);
+font-size: 24px;
+font-weight: bold;
+border-radius: 5px;
+padding: 5px 10px;}
+table tbody tr td{
+    border-radius: 5px;
+    text-align: center;
+    background:  #fff5;
+    padding: 5px;
+    
+}
+table tbody tr td .price{
+    background:gold;
+border-radius: 2px;
+color: beige;
+padding: 2px;
+}
+table tbody tr td .count{
+    background:green;
+    color:black;
+    padding: 6px;
+
+}
+
+
+

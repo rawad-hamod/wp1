@@ -1,0 +1,37 @@
+body{
+    background-color: #003;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    background-color: rgba(0, 0, 136, 0.678);
+    width:80%;
+    padding: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+form input{
+    background-color: rgba(0, 0, 170, 0.603);
+    color:white;
+    border: none;
+    outline: none;
+    padding:5px 15px;
+    flex-basis:200px;
+    flex-grow: 1;
+}
+form button{
+    background-color: rgb(69, 69, 110);
+    color: aliceblue;
+    border:none;
+    padding:5px 10px;
+    flex-basis:40px;
+    flex-grow: 1;
+
+}
+@media (max-width:300px)
+{
+    form input{width:80%;}
+}

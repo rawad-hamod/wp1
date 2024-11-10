@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0
+    
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+header{
+   
+height:785px ;
+padding: 10px, 36px, 10px, 36px;
+border-radius: 37px;
+gap: 10px;
+
+    background-image: url(images/background\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 100px;
+    color: black;
+}
+.headermenu li{ font-size: 20px;
+    font-weight: 400;
+    padding: 20px;
+   
+
+}
+.navbar ul li a:hover{scale: 1.2;}
+
+li{list-style: none;}
+.headermenu{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 500;
+}
+.headercontainer{
+    margin: 50px;
+}
+.headercontainer h1{
+    
+font-family: Martel;
+font-size: 58px;
+font-weight: 900;
+line-height: 65px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.headercontainer h4{
+    
+
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.getqutebtn{
+   
+padding: 10px, 36px, 10px, 36px;
+border-radius: 37px;
+gap: 10px;
+background: #784F33;
+color:white;
+
+
+}
+.learnmorebtn{
+   
+padding: 10px, 36px, 10px, 36px;
+border-radius: 37px;
+border: 1px;
+gap: 10px;
+color: #784F33;
+border: 1px solid #784F33;
+
+}
+.practicearea{
+    width: 1440px;
+    height: 529px;
+    top: 785px;
+    padding: 0px, 195px, 2px, 195px;
+    
+}
+.practicearea .topbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: Fixed (864px);
+height: Hug (100px);
+
+}
+ .topbox h2{//styleName: h2;
+    font-family: Martel;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    padding:10px 100px;
+    }
+    .practicearea .topbox p{
+        
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.20000000298023224px;
+text-align: center;
+
+    }
+    /* تنسيقات حاوية الكروت  */
+.cardscontainers1{
+    padding: 20px 60px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+.s2card{
+    width:30%;
+    background: #f7f5f5;
+    box-shadow: 0 5px 3px rgba(184, 175, 175, 0.5);
+    margin: auto;
+    
+}
