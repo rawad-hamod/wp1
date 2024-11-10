@@ -61,27 +61,27 @@
         <div class="col-12 col-md-6">
             <div class="contact-form justify-content-center align-items-center gap-1">
                 <div class="form">
-                    <form class=" form-group d-flex flex-column justify-content-center align-items-center gap-0.5 ">
+                    <form class=" form-group d-flex flex-column justify-content-center align-items-center gap-0.5" id="form">
                         <h3>please, fill the fields below</h3>
                         <div class="form-row d-flex justify-content-space-between">
                             <div class="col">
                                 <label for="name">Your Name</label>
-                                <input id="name" class="form-control" type="text" placeholder="exp:Rawad Hamoud">
-                                <p id="name-error"></p>
+                                <input id="name" class="form-control" type="text" placeholder="exp:Rawad Hamoud" required>
+                                <p id="name-error" class="text-danger"></p>
                             </div>
                             <div class="col">
                                 <label for="phone number">Your phone number</label>
                                 <input id="phone number" class="form-control col" type="number"
-                                    placeholder="exp:0949******">
-                                <p id="num-error"></p>
+                                    placeholder="exp:949******" required>
+                                <p id="num-error" class="text-danger"></p>
                             </div>
                         </div>
                         <label for="career">Your career:</label>
                         <input id="career" type="text" class="form-control" placeholder="Doctor">
-                        <label for="name">Your cv</label>
+                        <label for="file">Your cv</label>
                         <input id="file" class="form-control" type="file" placeholder="to give me a hint about your job">
                         <label for="email">Your email</label>
-                        <input id="email" class="form-control" type="email" placeholder="exp:name@gmail.com">
+                        <input id="email" class="form-control" type="email" placeholder="exp:name@gmail.com" required>
                         <label for="question">Your question</label>
                         <textarea id="question" class="form-control" type="text" rows="5" columns="1"
                             placeholder="what time and cost required to build up a web site for doctor appointment acheving the condition with the attached file"></textarea>
